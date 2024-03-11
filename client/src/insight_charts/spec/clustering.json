@@ -1,0 +1,313 @@
+{
+  "chart": {
+    "size": "large",
+    "type": "clustering",
+    "style": "business",
+    "duration": 0
+  },
+  "fact": {
+    "type": "outlier",
+    "subspace": [],
+    "measure": [
+      {
+        "field": "s0_v0"
+      }
+    ],
+    "breakdown": [
+      {
+        "field": "time"
+      }
+    ],
+    "focus": [
+      {
+        "field": "time",
+        "value": "2020/3/15",
+        "cluster": [
+          {
+            "score": 0.8627619017348204,
+            "position": [
+              [
+                -0.9651692452079775,
+                -10.008224962649678
+              ],
+              [
+                -2.1388126402230374,
+                -10.119875283606847
+              ],
+              [
+                -1.6780474324953318,
+                -9.734451836156131
+              ],
+              [
+                -1.409742003942521,
+                -10.267979138999356
+              ],
+              [
+                -3.39660442645908,
+                -9.601191580795495
+              ]
+            ],
+            "representation": {
+              "v0": "s3_v0",
+              "v1": "s3_v1"
+            },
+            "member": [
+              {
+                "v0": "s0_v0",
+                "v1": "s0_v1"
+              },
+              {
+                "v0": "s3_v0",
+                "v1": "s3_v1"
+              },
+              {
+                "v0": "s8_v0",
+                "v1": "s8_v1"
+              },
+              {
+                "v0": "s11_v0",
+                "v1": "s11_v1"
+              },
+              {
+                "v0": "s12_v0",
+                "v1": "s12_v1"
+              }
+            ]
+          },
+          {
+            "score": 0.8627619017348204,
+            "position": [
+              [
+                4.738520310967109,
+                9.297137148343044
+              ],
+              [
+                2.5429979959646993,
+                9.629758871636716
+              ],
+              [
+                4.307074440416875,
+                8.978932905042939
+              ],
+              [
+                2.6514403593854006,
+                10.097248985649696
+              ],
+              [
+                4.006334600319912,
+                9.365149028600355
+              ]
+            ],
+            "representation": {
+              "v0": "s5_v0",
+              "v1": "s5_v1"
+            },
+            "member": [
+              {
+                "v0": "s5_v0",
+                "v1": "s5_v1"
+              },
+              {
+                "v0": "s6_v0",
+                "v1": "s6_v1"
+              },
+              {
+                "v0": "s7_v0",
+                "v1": "s7_v1"
+              },
+              {
+                "v0": "s9_v0",
+                "v1": "s8_v1"
+              },
+              {
+                "v0": "s11_v0",
+                "v1": "s11_v1"
+              }
+            ]
+          }
+        ],
+        "outlier": [
+          {
+            "score": 0.9117128536320404,
+            "position": [
+              [
+                9.18810958109044,
+                -2.9277740982109624
+              ]
+            ]
+          },
+          {
+            "score": 0.9153054700494314,
+            "position": [
+              [
+                -8.367436070172795,
+                4.737083130280586
+              ]
+            ]
+          },
+          {
+            "score": 0.914708406904522,
+            "position": [
+              [
+                -9.478665469643696,
+                0.5541868308651333
+              ]
+            ]
+          }
+        ],
+        "variable": [
+          {
+            "name": "v0",
+            "member": [
+              "s0_v0",
+              "s1_v0",
+              "s2_v0",
+              "s3_v0",
+              "s4_v0",
+              "s5_v0",
+              "s6_v0",
+              "s7_v0",
+              "s8_v0",
+              "s9_v0",
+              "s10_v0",
+              "s11_v0",
+              "s12_v0"
+            ]
+          },
+          {
+            "name": "v1",
+            "member": [
+              "s0_v1",
+              "s1_v1",
+              "s2_v1",
+              "s3_v1",
+              "s4_v1",
+              "s5_v1",
+              "s6_v1",
+              "s7_v1",
+              "s8_v1",
+              "s9_v1",
+              "s10_v1",
+              "s11_v1",
+              "s12_v1"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "url": "./clustering.csv",
+    "schema": [
+      {
+        "field": "time",
+        "type": "temporal",
+        "pictype": "time"
+      },
+      {
+        "field": "s0_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s0_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s1_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s1_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s2_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s2_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s3_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s3_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s4_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s4_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s5_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s5_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s6_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s6_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s7_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s7_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s8_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s8_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s9_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s9_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s10_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s10_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s11_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s11_v1",
+        "type": "numerical"
+      },
+      {
+        "field": "s12_v0",
+        "type": "numerical"
+      },
+      {
+        "field": "s12_v1",
+        "type": "numerical"
+      }
+    ]
+  }
+}

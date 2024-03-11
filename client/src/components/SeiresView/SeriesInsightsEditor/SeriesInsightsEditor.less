@@ -1,0 +1,152 @@
+.time-analysis-right-wrapper {
+    height: 100%;
+    padding: 0px 8px 0px 8px;
+    background: #FFFFFF;
+    box-shadow: 2px 3px 10px 0 rgba(165, 165, 165, 0.5);
+
+    .init-edit-pannel {
+        height: calc(100% - 45px) !important; //new modify
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 3px;
+
+        .ant-collapse {
+            background-color: #fff !important;
+            border: 0 !important;
+        }
+
+        .ant-collapse>.ant-collapse-item:last-child,
+        .ant-collapse>.ant-collapse-item:last-child>.ant-collapse-header {
+            border-radius: 0 0 4px 4px;
+        }
+
+        .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+            font-size: 14px !important;
+            // padding-left: 30px!important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            font-weight: 400;
+        }
+
+        .ant-collapse-content {
+            overflow: hidden;
+            color: rgba(0, 0, 0, .85);
+            background-color: #fff;
+            border: 1px solid #979797;
+            height: 40%;
+            width: 286px;
+        }
+
+        .ant-collapse-content>.ant-collapse-content-box {
+            padding: 5px !important;
+            width: 285px;
+        }
+
+        .ant-select {
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, .65);
+            font-size: 14px;
+            font-variant: tabular-nums;
+            line-height: 1.5;
+            font-feature-settings: "tnum", "tnum";
+            position: relative;
+            display: inline-block;
+            outline: 0;
+        }
+
+        .ant-collapse-content {
+            color: rgba(0, 0, 0, .85);
+        }
+
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+            border-radius: 4px;
+        }
+    }
+
+    .start-back-btn {
+        .edit-panel-btn {
+            width: 290px;
+            display: inline;
+            margin-top: 5px;
+            border: none;
+            float: left;
+            .ant-col:hover {
+                background: #FCBE31;
+                box-shadow: 0 1px 3px 0 #FCBE31;
+            }
+            .ant-col {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 36px;
+                background: #DBDBDB;
+                border-radius: 5px;
+                cursor: pointer;
+                div {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 0px;
+                }
+                p {
+                    font-family: @NotoSansHans-Regular;
+                    font-size: 14px;
+                    color: #000000;
+                    letter-spacing: 0;
+                    text-align: center;
+                    margin-bottom: 0px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@NotoSansHans-Regular: "NotoSansHans-Regular",
+    "HelveticaHelvetica",
+    Arial,
+    "Lucida Family",
+    Verdana,
+    Tahoma,
+    "Trebuchet MS";
+@font-face {
+    font-family: "NotoSansHans-Thin-Windows";
+    src        : url('../../../font/NotoSansHans-Thin-Windows/NotoSansHans-Thin-Windows.ttf'),
+        url('../../../font/NotoSansHans-Thin-Windows/NotoSansHans-Thin-Windows.eot');
+}
+.ant-tabs{
+    height:100%;
+    .ant-tabs-ink-bar{
+        opacity: 0;
+    }
+
+    .ant-tabs-tab-btn {
+        left: 10px;
+    }
+}
+
+.ant-tabs-content{
+    height: 100%;
+}
+.ant-tabs-tabpane ::-webkit-scrollbar { 
+    width: 4px;  
+    height: 2px;
+  
+} 
+
+/*定义滚动条轨道（凹槽）样式*/ 
+.ant-tabs-tabpane ::-webkit-scrollbar-track { 
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    /* 较少使用 */
+    border-radius: 14px; 
+    border: #ffffff;
+    background:  rgb(255, 255, 255);
+   
+} 
+/*定义滑块 样式*/ 
+.ant-tabs-tabpane ::-webkit-scrollbar-thumb { 
+    border-radius: 14px; 
+    // background-clip:padding-box;
+    // height: 100px;    /* 滚动条滑块长度 */
+    background-color:rgb(223, 223, 223); 
+}
+

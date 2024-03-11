@@ -1,0 +1,59 @@
+{
+    "chart": {
+        "type": "trend"
+    },
+    "fact": {
+        "subspace": [
+            200,
+            400
+        ],
+        "measure": [
+            {
+                "field": "value",
+                "aggregate": "avg"
+            }
+        ],
+        "breakdown": [
+            {
+                "field": "time",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": [
+            {
+                "field": "time",
+                "scope": [
+                    26,
+                    31
+                ],
+                "value": 0.7040260212953675,
+                "regression": [
+                    9.5170753998,
+                    9.369055597800001,
+                    9.017059079600001,
+                    8.6543781962,
+                    8.221857251800001,
+                    7.959650745400001
+                ]
+            }
+        ]
+    },
+    "data": {
+        "url": "./trend.csv",
+        "schema": [
+            {
+                "field": "time",
+                "type": "temporal",
+                "pictype": "time"
+            },
+            {
+                "field": "value",
+                "type": "numerical"
+            },
+            {
+                "field": "value_trend",
+                "type": "numerical"
+            }
+        ]
+    }
+}

@@ -1,0 +1,103 @@
+.file-information {
+    // width      : 100%;
+    margin-left: 6px;
+    float: left;
+
+    .time-series-title-box {
+        font-family: @NotoSansHans-Medium;
+        font-size: 26px;
+        color: #F28B30;
+        height: 33px;
+        line-height: 33px;
+        margin-bottom: 1px !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        word-break: keep-all;
+    }
+
+    .time-series-title {
+        // line-height: 27px;
+        font-family: @NotoSansHans-Medium;
+        font-size: 26px;
+        height: 28px;
+        line-height: 28px;
+        color: #1A0000;
+        margin-left: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    .time-scope-box {
+        display: flex;
+        flex-direction: row;
+        line-height: 14px;
+
+        .time-scope {
+            font-family: @NotoSansHans-Regular;
+            font-size: 14px;
+            color: #6D757A;
+            margin-right: 15px;
+            line-height: 21px;
+            height: 21px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .scope-title {
+            font-family: @NotoSansHans-Regular;
+            font-size: 14px;
+            color: #6D757A;
+            line-height: 21px;
+            height: 21px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .scope-value {
+            margin-left: 2px;
+            font-family: @NotoSansHans-Regular;
+            font-size: 14px;
+            color: black;
+            line-height: 21px;
+            height: 21px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+@NotoSansHans-Regular: "NotoSansHans-Regular",
+    "HelveticaHelvetica",
+    Arial,
+    "Lucida Family",
+    Verdana,
+    Tahoma,
+    "Trebuchet MS";
+@NotoSansHans-Medium: "NotoSansHans-Medium",
+    "HelveticaHelvetica",
+    Arial,
+    "Lucida Family",
+    Verdana,
+    Tahoma,
+    "Trebuchet MS";
+
+@font-face {
+    font-family: "NotoSansHans-Regular";
+    src: url('../../../font/NotoSansHans-Regular/NotoSans-Regular1.ttf'),
+        url('../../../font/NotoSansHans-Regular/NotoSansHans-Regular.eot');
+}
+
+@font-face {
+    font-family: "NotoSansHans-Medium";
+    src: url('../../../font/NotoSansHans-Medium/NotoSansHans-Medium.ttf'),
+        url('../../../font/NotoSansHans-Medium/NotoSansHans-Medium.eot');
+}

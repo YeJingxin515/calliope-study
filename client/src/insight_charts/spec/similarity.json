@@ -1,0 +1,87 @@
+{
+    "chart": {
+        "type": "similarity"
+    },
+    "fact": {
+        "subspace": [],
+        "measure": [
+            {
+                "field": "CPUUsage",
+                "aggregate": "avg",
+                "tag": "baseline"
+            },
+            {
+                "field": "GPUUsage",
+                "aggregate": "avg",
+                "tag": "non-baseline"
+            },
+            {
+                "field": "FailureRate",
+                "aggregate": "avg",
+                "tag": "non-baseline"
+            }
+        ],
+        "breakdown": [
+            {
+                "field": "time",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": [
+            {
+                "field": "CPUUsage",
+                "value": [
+                    {
+                        "start": 99,
+                        "end": 199,
+                        "similarity_num": 1.0,
+                        "text": "Base Line"
+                    }
+                ]
+            },
+            {
+                "field": "GPUUsage",
+                "value": [
+                    {
+                        "start": 229,
+                        "end": 329,
+                        "similarity_value": 1.0,
+                        "text": "No.1"
+                    }
+                ]
+            },
+            {
+                "field": "FailureRate",
+                "value": [
+                    {
+                        "start": 499,
+                        "end": 599,
+                        "similarity_value": 1.0,
+                        "text": "No.1"
+                    }
+                ]
+            }
+        ]
+    },
+    "data": {
+        "url": "similarity_test.csv",
+        "schema": [
+            {
+                "field": "time",
+                "type": "temporal"
+            },
+            {
+                "field": "CPUUsage",
+                "type": "numerical"
+            },
+            {
+                "field": "GPUUsage",
+                "type": "numerical"
+            },
+            {
+                "field": "FailureRate",
+                "type": "numerical"
+            }
+        ]
+    }
+}

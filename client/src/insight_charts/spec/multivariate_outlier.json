@@ -1,0 +1,211 @@
+{
+  "chart": {
+    "type": "multivariate_outlier"
+  },
+  "fact": {
+    "subspace": [
+      300,
+      600
+    ],
+    "measure": [
+      {
+        "field": "CPUcapacityprovisioned",
+        "aggregate": "avg"
+      },
+      {
+        "field": "CPUcapacityprovisioned",
+        "aggregate": "avg"
+      },
+      {
+        "field": "CPUusage",
+        "aggregate": "avg"
+      },
+      {
+        "field": "CPUusage.1",
+        "aggregate": "avg"
+      },
+      {
+        "field": "Memorycapacityprovisioned",
+        "aggregate": "avg"
+      },
+      {
+        "field": "Memoryusage",
+        "aggregate": "avg"
+      },
+      {
+        "field": "Diskreadthroughput",
+        "aggregate": "avg"
+      },
+      {
+        "field": "Diskwritethroughput",
+        "aggregate": "avg"
+      },
+      {
+        "field": "Networkreceivedthroughput",
+        "aggregate": "avg"
+      },
+      {
+        "field": "Networktransmittedthroughput",
+        "aggregate": "avg"
+      }
+    ],
+    "breakdown": [
+      {
+        "field": "Timestamp",
+        "granularity": "Hour"
+      }
+    ],
+    "focus": [
+      {
+        "field": "Timestamp",
+        "start": 29,
+        "end": 29,
+        "score": 0.9422204471309019,
+        "cluster": [
+          {
+            "center": {
+              "score": 0.9203788271495779,
+              "value": [
+                0.0008896797153024901,
+                0.0880782918149466,
+                0.0017793594306049802
+              ],
+              "forecast": [
+                0.042468764577623885
+              ]
+            },
+            "other": [
+              {
+                "field": "Networktransmittedthroughput",
+                "score": 1.716404796070492e-13
+              }
+            ]
+          },
+          {
+            "center": {
+              "score": 0.5999995558744462,
+              "value": [
+                0.0005875801494905282,
+                0.6,
+                0.0002608562527846415
+              ],
+              "forecast": [
+                0.042468764577623885
+              ]
+            },
+            "other": [
+              {
+                "field": "CPUcapacityprovisioned",
+                "score": 0.8174741541289856
+              },
+              {
+                "field": "Memorycapacityprovisioned",
+                "score": 0.8174741541289856
+              },
+              {
+                "field": "Diskreadthroughput",
+                "score": 0.8174741541289856
+              },
+              {
+                "field": "Diskwritethroughput",
+                "score": 0.8174741541289856
+              },
+              {
+                "field": "Networkreceivedthroughput",
+                "score": 0.8174741541289856
+              }
+            ]
+          },
+          {
+            "center": {
+              "score": 0.9913945750315432,
+              "value": [
+                0.005649717514124294,
+                0.6214689265536721,
+                0.02824858757062146
+              ],
+              "forecast": [
+                0.042468764577623885
+              ]
+            },
+            "other": [
+              {
+                "field": "CPUusage",
+                "score": 0.8151578965631725
+              }
+            ]
+          },
+          {
+            "center": {
+              "score": 0.9876722831571665,
+              "value": [
+                0.0965734276984342,
+                0.8107344632768361,
+                0.05299529883295888
+              ],
+              "forecast": [
+                0.042468764577623885
+              ]
+            },
+            "other": [
+              {
+                "field": "CPUusage.1",
+                "score": 0.0
+              },
+              {
+                "field": "Memoryusage",
+                "score": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "url": "multivariate_outlier.csv",
+    "schema": [
+      {
+        "field": "Timestamp",
+        "type": "temporal",
+        "pictype": "time"
+      },
+      {
+        "field": "CPUcapacityprovisioned",
+        "type": "numerical"
+      },
+      {
+        "field": "CPUusage",
+        "type": "numerical"
+      },
+      {
+        "field": "CPUusage.1",
+        "type": "numerical"
+      },
+      {
+        "field": "Memorycapacityprovisioned",
+        "type": "numerical"
+      },
+      {
+        "field": "Memoryusage",
+        "type": "numerical"
+      },
+      {
+        "field": "Diskreadthroughput",
+        "type": "numerical"
+      },
+      {
+        "field": "Diskwritethroughput",
+        "type": "numerical"
+      },
+      {
+        "field": "Networkreceivedthroughput",
+        "type": "numerical"
+      },
+      {
+        "field": "Networktransmittedthroughput",
+        "type": "numerical"
+      }
+    ]
+  }
+}

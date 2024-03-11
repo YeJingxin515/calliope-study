@@ -1,0 +1,84 @@
+{
+    "chart": {
+        "type": "origin",
+        "width":600,
+        "height":360
+    },
+    "fact": {
+        "subspace": [],
+        "measure": [
+            {
+                "field": "CPUUsage",
+                "aggregate": "avg"
+            },
+            {
+                "field": "GPUUsage",
+                "aggregate": "avg"
+            },
+            {
+                "field": "FailureRate",
+                "aggregate": "avg"
+            },
+            {
+                "field": "value",
+                "aggregate": "avg"
+            },
+            {
+                "field": "value1",
+                "aggregate": "avg"
+            },
+            {
+                "field": "value2",
+                "aggregate": "avg"
+            },
+            {
+                "field": "value3",
+                "aggregate": "avg"
+            }
+        ],
+        "breakdown": [
+            {
+                "field": "time",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": []
+    },
+    "data": {
+        "url": "similarity_test.csv",
+        "schema": [
+            {
+                "field": "time",
+                "type": "temporal"
+            },
+            {
+                "field": "CPUUsage",
+                "type": "numerical"
+            },
+            {
+                "field": "GPUUsage",
+                "type": "numerical"
+            },
+            {
+                "field": "FailureRate",
+                "type": "numerical"
+            },
+            {
+                "field": "value",
+                "type": "numerical"
+            },
+            {
+                "field": "value1",
+                "type": "numerical"
+            },
+            {
+                "field": "value2",
+                "type": "numerical"
+            },
+            {
+                "field": "value3",
+                "type": "numerical"
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "embedding": {
+        "batch_size": 32,
+        "channels": 30,
+        "compared_length": 500,
+        "depth": 10,
+        "nb_steps": 300,
+        "in_channels": 1,
+        "kernel_size": 3,
+        "lr": 0.0001,
+        "nb_random_samples": 10,
+        "negative_penalty": 1,
+        "out_channels": 160,
+        "reduced_size": 80,
+        "cuda": false,
+        "gpu": 0
+    },
+    "story": {
+        "cache": true,
+        "insight_cache": null,
+        "context_cache": null,
+        "epoch": 200,
+        "min_segment_length": 10,
+        "max_story_length": 6,
+        "word2vec": "en_core_web_md"
+    },
+    "ppo": {
+        "clip_param": 0.2,
+        "max_grad_norm": 0.5,
+        "ppo_update_time": 10,
+        "buffer_capacity": 3000,
+        "batch_size": 128,
+        "cuda": false
+    }
+}

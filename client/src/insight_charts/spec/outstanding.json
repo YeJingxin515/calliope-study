@@ -1,0 +1,51 @@
+{
+    "chart": {
+        "type": "outstanding"
+    },
+    "fact": {
+        "subspace": [
+            200,
+            400
+        ],
+        "measure": [
+            {
+                "field": "CPUUsage",
+                "aggregate": "avg"
+            }
+        ],
+        "breakdown": [
+            {
+                "field": "time",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": [
+            {
+                "field": "CPUUsage",
+                "value": 482.957926,
+                "name": "top1"
+            }
+        ]
+    },
+    "data": {
+        "url": "./outstanding_test.csv",
+        "schema": [
+            {
+                "field": "time",
+                "type": "temporal"
+            },
+            {
+                "field": "CPUUsage",
+                "type": "numerical"
+            },
+            {
+                "field": "GPUUsage",
+                "type": "numerical"
+            },
+            {
+                "field": "FailureRate",
+                "type": "numerical"
+            }
+        ]
+    }
+}

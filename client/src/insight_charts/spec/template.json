@@ -1,0 +1,22 @@
+{
+    "chart": {
+        "type": "origin",
+        "width":600,
+        "height":360
+    },
+    "fact": {
+        "subspace": [],
+        "measure": [],
+        "breakdown": [
+            {
+                "field": "",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": []
+    },
+    "data": {
+        "url": "",
+        "schema": []
+    }
+}

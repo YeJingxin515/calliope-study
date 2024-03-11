@@ -1,0 +1,13 @@
+{
+  "chart": {},
+  "fact": {
+    "subspace": [],
+    "measure": [],
+    "breakdown": [],
+    "focus": []
+  },
+  "data": {
+    "url": "",
+    "schema": []
+  }
+}

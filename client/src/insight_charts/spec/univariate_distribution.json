@@ -1,0 +1,63 @@
+{
+  "chart": {
+    "type": "univariate_distribution"
+  },
+  "fact": {
+    "subspace": [
+      200,
+      400
+    ],
+    "measure": [
+      {
+        "field": "value",
+        "aggregate": "avg"
+      }
+    ],
+    "breakdown": [
+      {
+        "field": "time",
+        "granularity": "Minute"
+      }
+    ],
+    "focus": [
+      {
+        "field": "value",
+        "value": 8.010987269402985,
+        "name": "mean"
+      },
+      {
+        "field": "value",
+        "value": 9.111713239110623,
+        "name": "mean+2std"
+      },
+      {
+        "field": "value",
+        "value": 6.910261299695348,
+        "name": "mean-2std"
+      },
+      {
+        "field": "value",
+        "value": 7.175577557,
+        "name": "min"
+      },
+      {
+        "field": "value",
+        "value": 9.801218582999999,
+        "name": "max"
+      }
+    ]
+  },
+  "data": {
+    "url": "./univariate_distribution.csv",
+    "schema": [
+      {
+        "field": "time",
+        "type": "temporal"
+      },
+      {
+        "field": "value",
+        "type": "numerical"
+      }
+    ]
+  }
+}

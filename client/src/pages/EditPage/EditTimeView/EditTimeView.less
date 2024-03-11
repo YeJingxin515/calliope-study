@@ -1,0 +1,92 @@
+.time-analysis-page {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .time-analysis-middle {
+        width: calc(100% - 308px);
+        height: 100%;
+
+        .csv-information {
+            height: 60px;
+            line-height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .time-analysis-wrapper {
+            height: calc(100% - 60px);
+            width: calc(100% - 15px);
+            padding-top: 16px;
+            margin-left: 6px;
+            position: relative;
+            background: #fff;
+            box-shadow: 0 3px 10px 0 hsla(0, 0%, 64.7%, .5);
+            border-radius: 8px;
+            display: inline-block;
+
+            .show-model-selection {
+                margin-left: 16px;
+            }
+
+            .time-seires-view {
+                width: 100%;
+                height: calc(100% - 225px);
+                position: relative;
+                border-bottom: 1px solid hsla(0, 0%, 64.7%, .5);
+                overflow-y: scroll;
+                overflow-x: scroll;
+                z-index: 99;
+
+                .focus-block {
+                    position: absolute;
+                    // opacity: 0.25;
+                    border: 2px solid #f5bf27;
+                    background-color: rgba(245, 191, 39, 0.25);
+                    float: left;
+                    z-index: 3000;
+                    cursor: pointer;
+                }
+
+                .focus-block:hover {
+                    position: absolute;
+                    // opacity: 0.25;
+                    border: 2px solid #f5bf27;
+                    background-color: rgba(245, 191, 39, 0.55);
+                    float: left;
+                    z-index: 3000;
+                    cursor: pointer;
+                }
+
+                // .time-seires-view-div {
+                //     width: 100%;
+                //     height: 100%;
+                //     overflow-x: scroll;
+                //     overflow-y: scroll;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                // }
+            }
+
+            .time-sequence-view {
+                width: 100%;
+                display: block;
+                height: 205px;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    .time-analysis-right {
+        flex: 0 0 320px;
+        max-width: 320px;
+        min-width: 320px;
+        width: 320px;
+        position: relative;
+    }
+}

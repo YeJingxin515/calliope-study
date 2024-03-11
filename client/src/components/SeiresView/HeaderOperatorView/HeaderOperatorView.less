@@ -1,0 +1,49 @@
+
+.editor-box {
+    position: absolute;
+    left: calc(100% - 398px);
+    a{
+        color: rgba(0,0,0,0.85);
+    }
+    .export-box-operator-wapper {
+        width: 460px;
+
+        .export-box-operator {
+            display: flex;
+            width: 80px;
+            box-shadow: -2px 0 10px 0 rgba(207, 207, 207, 0.5);
+            background-color: white;
+            justify-content: center;
+            border-radius: 4px;
+
+            .export-btn-div {
+                font-size: 13px;
+                line-height: 30px;
+                text-align: center;
+                display: inline-block;
+
+                .export-btn {
+                    width: 30px;
+                    height: 30px;
+                    background: url('../../../image/export.png') center no-repeat;
+                    background-size: 18px 18px;
+                    float: left;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .export-box-operator:hover{
+            a{
+                transition:color 0s;
+                color: #ed9c04;
+            }
+            cursor: pointer;
+            .export-btn {
+                background: url('../../../image/export_orange.png') center no-repeat;
+                background-size : 18px 18px;
+                float: left;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "chart": {
+      "size": "large",
+      "type": "forecasting",
+      "style": "business",
+      "duration": 0
+    },
+    "fact": {
+      "type": "outlier",
+      "subspace": [],
+      "measure": [
+        {
+          "field": "value"
+        }
+      ],
+      "breakdown": [
+        {
+          "field": "time"
+        },
+        {
+          "field": "value_up"
+        },
+        {
+          "field": "value_low"
+        }
+      ],
+      "focus": [
+        {
+          "field": "time",
+          "start": 739,
+          "value": "2021-06-09T19:00:00.000000Z",
+          "name": "prediction_start_time"
+        }
+      ]
+    },
+    "data": {
+      "url": "./forecasting.csv",
+      "schema": [
+        {
+          "field": "time",
+          "type": "temporal",
+          "pictype": "time"
+        },
+        {
+          "field": "value_low",
+          "type": "numerical"
+        },
+        {
+          "field": "value_up",
+          "type": "numerical"
+        },
+        {
+          "field": "value",
+          "type": "numerical"
+        }
+      ]
+    }
+  }

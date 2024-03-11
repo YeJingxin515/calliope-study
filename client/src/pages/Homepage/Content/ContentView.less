@@ -1,0 +1,264 @@
+@import ".././../../common.less";
+
+.ContentView {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slogan {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slogan :nth-child(1) {
+    text-align: center;
+    font-family: @NotoSansHans-Bold;
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 1.12px;
+    text-align: left;
+    line-height: 50px;
+    margin-top: 28px;
+    white-space: nowrap;
+}
+
+.slogan :nth-child(2) {
+    font-family: @NotoSansHans-Regular;
+    font-size: 20px;
+    color: #222222;
+    text-align: left;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.decorationImage {
+    position: absolute;
+    top: -39px;
+    background : url('@{myAliCould}/leaf.png') bottom no-repeat;
+    width: 39px;
+    height: 39px;
+    background-size: contain;
+}
+
+
+
+.belowPannel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+
+    .cloumnDiv span:nth-child(2) {
+        font-family: @NotoSansHans-Medium;
+        font-size: 16px;
+        height: 16px;
+        line-height: 16px;
+        color: #212121;
+        text-align: left;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .cloumnDiv span:nth-child(3) {
+        font-family: @NotoSansHans-Regular;
+        font-size: 16px;
+        color: #424242;
+        text-align: center;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .cloumnDiv {
+        display: block;
+        width: 30%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconSize {
+        width: 128px;
+        height: 132px;
+        // min-height: 32px;
+        // min-width: 28px;
+        margin-bottom: 15px;
+    }
+
+    .icon1 {
+        background : url("@{myAliCould}/belowPannel/light.png") no-repeat center;
+        width: 36px;
+        height: 36px;
+        min-height: 36px;
+        min-width: 36px;
+        background-size: contain;
+    }
+
+    .icon2 {
+        background: url("/jogging.png") no-repeat center;
+        background-size: contain;
+    }
+
+    .icon3 {
+        background: url("/data-center.png") no-repeat center;
+        background-size: contain;
+    }
+
+    .icon4 {
+        background : url("@{myAliCould}/belowPannel/quality.png") no-repeat center;
+        background-size: contain;
+    }
+
+    .icon5 {
+        background: url("/covid-19.png") no-repeat center;
+        background-size: contain;
+    }
+
+    .icon6 {
+        background : url("@{myAliCould}/belowPannel/upload.png") no-repeat center;
+        background-size: contain;
+    }
+}
+
+.aboutContent {
+    margin-top: 19px;
+}
+
+
+
+.aboutContent .leftTxt {
+    line-height: 20px;
+    font-family: @NotoSansHans-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    border-bottom: 4px #EB6331 solid;
+    padding-bottom: 16px;
+    margin-right: 103px;
+}
+
+.aboutContent .ant-row {
+    height: 100% !important;
+}
+
+.aboutContent .ant-col-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    font-family: @NotoSansHans-Regular;
+    font-size: 16px;
+    color: #231815;
+}
+
+.aboutContent .ant-col-8:nth-child(1) div {
+    margin-top: 41px;
+    width: 94px;
+    height: 94px;
+    background : url('@{myAliCould}/insightful.png') no-repeat center;
+    background-size: contain;
+}
+
+.aboutContent .ant-col-8:nth-child(2) div {
+    margin-top: 41px;
+    width: 94px;
+    height: 94px;
+    background : url('@{myAliCould}/efficient.png') no-repeat center;
+    background-size: contain;
+}
+
+.aboutContent .ant-col-8:nth-child(3) div {
+    margin-top: 41px;
+    width: 94px;
+    height: 94px;
+    background : url('@{myAliCould}/expressive.png') no-repeat center;
+    background-size: contain;
+}
+
+@media screen and (max-width:1080px) {
+    .factSheetAndReport {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .factSheetAndReport {
+        width: 100%;
+    }
+
+    .factSheetAndReport .ant-col-12 {
+        padding: 0px 20px
+    }
+
+    .howtoConvert {
+        padding-top: 35px;
+        padding-bottom: 65px;
+        flex-direction: column-reverse !important;
+
+        div:nth-child(2) {
+            margin-left: 0px !important;
+            width: 80%;
+
+            span:nth-child(1) {
+                margin-bottom: 34px;
+            }
+
+            span:nth-child(2) {
+                margin-bottom: 15px;
+            }
+        }
+
+        div:nth-child(1) {
+            margin-left: -10%;
+        }
+    }
+}
+
+
+
+.howtoConvert {
+    padding-top: 60px;
+    padding-bottom: 71px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.howtoConvert>div:nth-child(1) {
+    width: 306px;
+    height: 100px;
+    background : url('@{myAliCould}/belowPannel/convertUndraw.png') no-repeat center;
+    background-size: contain;
+}
+
+.howtoConvert>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 98px;
+
+    span:nth-child(1) {
+        font-family: @NotoSansHans-Medium;
+        line-height: 16px;
+        font-size: 16px;
+        color: #212121;
+        text-align: left;
+        margin-bottom: 34px;
+    }
+
+    span {
+        font-family: @NotoSansHans-Regular;
+        font-size: 16px;
+        color: #0F0F0F;
+        line-height: 24px;
+        margin-bottom: 26px;
+    }
+}

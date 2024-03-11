@@ -1,0 +1,71 @@
+{
+    "chart": {
+        "type": "seasonality"
+    },
+    "fact": {
+        "subspace": [
+            500,
+            600
+        ],
+        "measure": [
+            {
+                "field": "value",
+                "aggregate": "avg"
+            }
+        ],
+        "breakdown": [
+            {
+                "field": "time",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": [
+            {
+                "field": "time",
+                "interval": 9,
+                "seasonal": [
+                    {
+                        "start": 36,
+                        "end": 45
+                    },
+                    {
+                        "start": 45,
+                        "end": 54
+                    },
+                    {
+                        "start": 63,
+                        "end": 72
+                    },
+                    {
+                        "start": 72,
+                        "end": 81
+                    }
+                ],
+                "average": [
+                    130.92062528725083,
+                    130.0373954658353,
+                    129.45237571780444,
+                    129.4520384904234,
+                    130.96972234956968,
+                    130.92305768908557,
+                    131.59809276293294,
+                    131.74478974765532,
+                    131.2818252155095
+                ]
+            }
+        ]
+    },
+    "data": {
+        "url": "./seasonality_test.csv",
+        "schema": [
+            {
+                "field": "time",
+                "type": "temporal"
+            },
+            {
+                "field": "value",
+                "type": "numerical"
+            }
+        ]
+    }
+}

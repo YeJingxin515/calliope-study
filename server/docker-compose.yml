@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+    nginx:
+        build: ./services/nginx
+        container_name: vasta-nginx
+        ports:
+            - 8007:80
+            - 8008:443
+        volumes:
+            - "./services/nginx/certs:/etc/nginx/certs"
+        depends_on:
+            - fileserver
+            - generator
+        networks:
+            - algorithm
+
+    fileserver:
+        build: ./services/fileserver
+        container_name: vasta-fileserver
+        ports:
+            - 6038:6038
+        volumes:
+            - "./volumes/data:/server/csvs"
+        command: gunicorn -c gunicorn.py run:app
+        networks:
+            - algorithm
+
+    generator:
+        build: ./services/generator
+        container_name: vasta-generator
+        command: gunicorn -c gunicorn.py run:app
+        ports:
+            - 6040:6040
+        networks:
+            - algorithm
+
+networks:
+    algorithm:
+        driver: bridge

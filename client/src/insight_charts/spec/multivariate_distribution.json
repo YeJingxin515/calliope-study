@@ -1,0 +1,159 @@
+{
+    "chart": {
+        "type": "multivariate_distribution"
+    },
+    "fact": {
+        "subspace": [
+            200,
+            400
+        ],
+        "measure": [
+            {
+                "field": "CPU usage [%]",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "aggregate": "avg"
+            }
+        ],
+        "breakdown": [
+            {
+                "field": "Timestamp [ms]",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": [
+            {
+                "field": "CPU usage [%]",
+                "value": 11.008291873963516,
+                "name": "mean"
+            },
+            {
+                "field": "CPU usage [%]",
+                "value": 2.4771276119995838,
+                "name": "std"
+            },
+            {
+                "field": "CPU usage [%]",
+                "value": 2.033333333333333,
+                "name": "min"
+            },
+            {
+                "field": "CPU usage [%]",
+                "value": 28.93333333333333,
+                "name": "max"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "value": 8388608.0,
+                "name": "mean"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "value": 0.0,
+                "name": "std"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "value": 8388608.0,
+                "name": "min"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "value": 8388608.0,
+                "name": "max"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "value": 1.9290215588723052,
+                "name": "mean"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "value": 17.366956901604837,
+                "name": "std"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "value": 0.0,
+                "name": "min"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "value": 185.4,
+                "name": "max"
+            },
+            {
+                "field": "CPU usage [%]",
+                "value": 10.658012472502236,
+                "name": "a"
+            },
+            {
+                "field": "CPU usage [%]",
+                "value": 0.0,
+                "name": "b"
+            },
+            {
+                "field": "CPU usage [%]",
+                "value": 0.0,
+                "name": "rad"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "value": 0.0,
+                "name": "a"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "value": 74.72253038966353,
+                "name": "b"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "value": 0.0,
+                "name": "rad"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "value": 74.72346753831552,
+                "name": "a"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "value": 10.651440125565742,
+                "name": "b"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "value": 0.2899155540695617,
+                "name": "rad"
+            }
+        ]
+    },
+    "data": {
+        "url": "multivariate_distribution.csv",
+        "schema": [
+            {
+                "field": "Timestamp [ms]",
+                "type": "temporal"
+            },
+            {
+                "field": "CPU usage [%]",
+                "type": "numerical"
+            },
+            {
+                "field": "Memory capacity provisioned [KB]",
+                "type": "numerical"
+            },
+            {
+                "field": "Disk read throughput [KB/s]",
+                "type": "numerical"
+            }
+        ]
+    }
+}

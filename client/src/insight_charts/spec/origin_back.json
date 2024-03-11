@@ -1,0 +1,172 @@
+{
+    "chart": {
+        "type": "origin",
+        "width":600,
+        "height":360
+    },
+    "fact": {
+        "subspace": [],
+        "measure": [
+            {
+                "field": "Temperature_Comedor_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Temperature_Habitacion_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Weather_Temperature",
+                "aggregate": "avg"
+            },
+            {
+                "field": "CO2_Comedor_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "CO2_Habitacion_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Humedad_Comedor_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Humedad_Habitacion_Sensor",
+                "aggregate": "avg"
+            },
+            {										
+                "field": "Lighting_Comedor_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Lighting_Habitacion_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Precipitacion",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Meteo_Exterior_Crepusculo",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Meteo_Exterior_Viento",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Meteo_Exterior_Sol_Oest",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Meteo_Exterior_Sol_Est",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Meteo_Exterior_Sol_Sud",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Meteo_Exterior_Piranometro",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Temperature_Exterior_Sensor",
+                "aggregate": "avg"
+            },
+            {
+                "field": "Humedad_Exterior_Sensor",
+                "aggregate": "avg"
+            }
+        ],
+        "breakdown": [
+            {
+                "field": "Date",
+                "granularity": "Minute"
+            }
+        ],
+        "focus": []
+    },
+    "data": {
+        "url": "SML2010-1_new_normal.csv",
+        "schema": [
+            {
+                "field": "Date",
+                "type": "temporal"
+            },
+            {
+                "field": "Temperature_Comedor_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "Temperature_Habitacion_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "Weather_Temperature",
+                "type": "numerical"
+            },
+            {
+                "field": "CO2_Comedor_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "CO2_Habitacion_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "Humedad_Comedor_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "Humedad_Habitacion_Sensor",
+                "type": "numerical"
+            },
+            {										
+                "field": "Lighting_Comedor_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "Lighting_Habitacion_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "Precipitacion",
+                "type": "numerical"
+            },
+            {
+                "field": "Meteo_Exterior_Crepusculo",
+                "type": "numerical"
+            },
+            {
+                "field": "Meteo_Exterior_Viento",
+                "type": "numerical"
+            },
+            {
+                "field": "Meteo_Exterior_Sol_Oest",
+                "type": "numerical"
+            },
+            {
+                "field": "Meteo_Exterior_Sol_Est",
+                "type": "numerical"
+            },
+            {
+                "field": "Meteo_Exterior_Sol_Sud",
+                "type": "numerical"
+            },
+            {
+                "field": "Meteo_Exterior_Piranometro",
+                "type": "numerical"
+            },
+            {
+                "field": "Temperature_Exterior_Sensor",
+                "type": "numerical"
+            },
+            {
+                "field": "Humedad_Exterior_Sensor",
+                "type": "numerical"
+            }
+        ]
+    }
+}

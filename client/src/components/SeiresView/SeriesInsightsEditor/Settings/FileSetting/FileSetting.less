@@ -1,0 +1,136 @@
+.time-temporal-tootip {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    font-size: 10px;
+    font-weight: 600;
+
+    .time-temporal-text {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 70%;
+        cursor: default;
+    }
+}
+
+.time-granularity-tootip {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    font-size: 10px;
+    font-weight: 600;
+
+    .time-granularity-tootip-text {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        // text-overflow: ellipsis;
+        width: 100%;
+        cursor: default;
+    }
+}
+
+.time-columns-tootip {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    font-size: 10px;
+    font-weight: 600;
+
+    .time-columns-tootip-text {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 70%;
+        cursor: default;
+    }
+}
+
+.time-temporal-content,
+.time-columns-content,
+.time-granularity-content {
+    display: inline-block;
+    width: 72%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.select-all-tags {
+    width: fit-content;
+    line-height: 19.6px;
+    padding: 2px 0px;
+    margin-top: 2px;
+
+    .ant-checkbox {
+        top: 0
+    }
+
+    .ant-checkbox-inner {
+        width: 14px;
+        height: 14px;
+    }
+
+    .ant-checkbox-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        padding: 0 0 0 5px;
+        border: 1px solid #c4c4c4;
+        border-radius: 2px;
+
+    }
+
+    .ant-checkbox-wrapper-checked {
+        background-color: #c4c4c4;
+    }
+
+}
+
+.ant-tooltip {
+    font-size: 12px;
+}
+
+.ant-tooltip-inner {
+    color: #000;
+    background-color: #ffffff;
+    word-break: break-all;
+}
+
+::selection {
+    background: #ebebeb;
+    color: #000;
+}
+
+.ant-tag {
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    padding: 2px 5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000;
+}
+
+.ant-tag-checkable-checked {
+    background-color: #c4c4c4;
+}
+
+.ant-tag-checkable:not(.ant-tag-checkable-checked):hover {
+    color: rgba(0, 0, 0, .65);
+}
+
+.ant-tag-checkable:not(.ant-tag-checkable-checked):active {
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.ant-tag-checkable-checked:active:not(.ant-tag-checkable) {
+    background-color: rgba(0, 0, 0, .65);
+}
